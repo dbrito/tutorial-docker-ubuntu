@@ -11,19 +11,19 @@ StackEdit stores your files in your browser, which means all your files are auto
 
 
 ## *Em que ele pode ser usado ?
-1 - Atualizando o repositório do apt-get
+1 - Atualizar o repositório do apt-get
 ```
 $ sudo apt-get update
 ```
-2 - Instalando os programas necessários para a instalação do Docker
+2 - Instalar os programas necessários para a instalação do Docker
 ```
 $ sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
 ```
-3 - Adiciona a chave do repositório do Docker
+3 - Adicionar a chave do repositório do Docker
 ```
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
-4 - Verifica se a chave foi instalada corretamente
+4 - Verificar se a chave foi instalada corretamente
 ```
 $ sudo apt-key fingerprint 0EBFCD88
 ```
@@ -34,9 +34,15 @@ pub   4096R/0EBFCD88 2017-02-22
 uid                  Docker Release (CE deb) <docker@docker.com>
 sub   4096R/F273FCD8 2017-02-22
 ```
-5- Adicionando o repositório do Docker
+5- Adicionar o repositório do Docker
 ```
 $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+```
+6- **Finalmente** instalar o Docker
+```
+$ sudo apt-get update
+https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+$ sudo apt-get install docker-ce
 ```
 
 The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
