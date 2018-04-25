@@ -77,5 +77,7 @@ docker rm 2ca40d5e3b8f
 *Onde o ``2ca40d5e3b8f`` seria o ID do container (que é encontrado no comando ``docker ps``).
 
 Fontes utilizadas:
+
 https://docs.docker.com/install/linux/docker-ce/
+
 https://www.mundodocker.com.br/
