@@ -46,7 +46,7 @@ Com a chave adicionada agora adiconamos o repositório do Docker
 ```
 $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 ```
-Com o repositório adicionado **finalmente 🙌🙌** podemos instalar o Docker
+Com o repositório adicionado, **finalmente 🙌🙌** podemos instalar o Docker
 ```
 $ sudo apt-get update
 https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
@@ -60,7 +60,7 @@ $ docker run -d -p 8080:80 nginx
 ```
 A partir disso o docker irá rodar um container (``run``) em background (``-d``), esse container estará exposto na porta 8080(``-p 8080:80``) e irá baixar a imagem do ``nginx``.
 
-# 3 - Monitoramento de containers
+## 3 - Monitoramento de containers
 Para saber se o seu container foi iniciado corretamente você pode usar o comando
 ```
 $ docker ps
@@ -75,3 +75,7 @@ Caso você queira encerrar algum container basta executar o comando
 docker rm 2ca40d5e3b8f
 ```
 *Onde o ``2ca40d5e3b8f`` seria o ID do container (que é encontrado no comando ``docker ps``).
+
+Fontes utilizadas:
+https://docs.docker.com/install/linux/docker-ce/
+https://www.mundodocker.com.br/
