@@ -15,6 +15,7 @@ O docker é composto principalmente por dois conceitos:
 
 ## 0 - Pré-requisitos
 Precisamos apenas de uma máquina Ubuntu com acesso a internet (modo bridge se estiver rodando uma VM), essa máquina Ubuntu também deve ser da arquitetura x86/x64 isso é necessário para que a virtualização do docker ocorra.
+*Para saber a arquitetura da sua máquina ubuntu basta rodar o comando ```uname -a```
 
 ## 1 - Instalando o Docker no Ubuntu
 1 - Antes de tudo precisamos atualizar o repositório do apt-get
