@@ -1,5 +1,6 @@
-# Tutorial Virtualização de Docker no Ubuntu
+<p align="center"><img src="https://cdn.cloudlabs.com.br/wp-content/uploads/2017/07/whale-docker-logo.png"/></p>
 
+# Tutorial Virtualização de Docker no Ubuntu
 Nessa tutorial iremos apresentar o que é o Docker e como o mesmo pode ser utilizar para a virtualização no sistema operacional ubuntu.
 
 
@@ -12,23 +13,19 @@ O docker é composto principalmente por dois conceitos:
 - Container:
 
 
-## *Em que ele pode ser usado ?
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
-
 ## 0 - Pré-requisitos
-
-All your files are listed in the file explorer. You can switch from one to another by clicking a file in the list.
+Precisamos apenas de uma máquina Ubuntu com acesso a internet (modo bridge se estiver rodando uma VM), essa máquina Ubuntu também deve ser da arquitetura x86/x64 isso é necessário para que a virtualização do docker ocorra.
 
 ## 1 - Instalando o Docker no Ubuntu
-1 - Atualizar o repositório do apt-get
+1 - Antes de tudo precisamos atualizar o repositório do apt-get
 ```
 $ sudo apt-get update
 ```
-2 - Instalar os programas necessários para a instalação do Docker
+2 - Com o reposotório atualizado podemos instalar os programas necessários para a instalação/execução do Docker
 ```
 $ sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
 ```
-3 - Adicionar a chave do repositório do Docker
+3 - Agora devemos adicionar a chave do repositório do Docker, isso se faz necessário porque temos que adicionar o repositório do docker ao a lista do apt-get, pois o docker não está disponível por padrão.
 ```
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
