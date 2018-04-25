@@ -60,8 +60,8 @@ $ docker run -d -p 8080:80 nginx
 ```
 A partir disso o docker irá rodar um container (``run``) em background (``-d``), esse container estará exposto na porta 8080(``-p 8080:80``) e irá baixar a imagem do ``nginx``.
 
-## 3 - Monitoramento de containers
-Para saber se o seu container foi iniciado corretamente você pode usar o comando
+## 3 - Monitorando os containers
+Depois de "rodar" um container você precisar saber se o mesmo foi iniciado corretamente e se ele ainda está de pé isso pode ser alcançado através do comando
 ```
 $ docker ps
 ```
@@ -77,7 +77,5 @@ docker rm 2ca40d5e3b8f
 *Onde o ``2ca40d5e3b8f`` seria o ID do container (que é encontrado no comando ``docker ps``).
 
 Fontes utilizadas:
-
 https://docs.docker.com/install/linux/docker-ce/
-
 https://www.mundodocker.com.br/
