@@ -1,4 +1,5 @@
 
+
 <p align="center"><img src="https://cdn.cloudlabs.com.br/wp-content/uploads/2017/07/whale-docker-logo.png"/></p>
 
 # Tutorial Virtualização de Docker no Ubuntu
@@ -7,7 +8,7 @@ Nessa tutorial iremos apresentar o que é o Docker e como o mesmo pode ser utili
 
 ## *Mas o que é Docker ?
 
-O Docker é uma plataforma de virtualização criada com o intuido em  alternativa de virtualização em que o kernel da máquina hospedeira é compartilhado com a máquina virtualizada ou o software em operação, portanto um desenvolvedor pode agregar a seu software a possibilidade de levar as bibliotecas e outras dependências do seu programa junto ao software com menos perda de desempenho do que a virtualização do hardware de um servidor completo. Assim, o docker torna operações em uma infraestrutura como serviços web mais eficientes e flexíveis.
+O Docker é uma plataforma de virtualização criada com o intuído de otimizar a criação, o teste e a de aplicações, para isso a virtualização em Docker não utiliza o kernel inteiro do sistema operacional da máquina virtual, ele utiliza o kernel da própria máquina hospedeira.
 
 ### Principais Componentes:
 - Imagem: Seria o template do container é nela que difinimos o sistema operacional, quais programas serão utilizados, e quais aplicações devem ser executadas.
