@@ -1,3 +1,4 @@
+
 <p align="center"><img src="https://cdn.cloudlabs.com.br/wp-content/uploads/2017/07/whale-docker-logo.png"/></p>
 
 # Tutorial Virtualização de Docker no Ubuntu
@@ -6,11 +7,13 @@ Nessa tutorial iremos apresentar o que é o Docker e como o mesmo pode ser utili
 
 ## *Mas o que é Docker ?
 
-O docker é uma alternativa de virtualização em que o kernel da máquina hospedeira é compartilhado com a máquina virtualizada ou o software em operação, portanto um desenvolvedor pode agregar a seu software a possibilidade de levar as bibliotecas e outras dependências do seu programa junto ao software com menos perda de desempenho do que a virtualização do hardware de um servidor completo. Assim, o docker torna operações em uma infraestrutura como serviços web mais eficientes e flexíveis.
+O Docker é uma plataforma de virtualização criada com o intuido em  alternativa de virtualização em que o kernel da máquina hospedeira é compartilhado com a máquina virtualizada ou o software em operação, portanto um desenvolvedor pode agregar a seu software a possibilidade de levar as bibliotecas e outras dependências do seu programa junto ao software com menos perda de desempenho do que a virtualização do hardware de um servidor completo. Assim, o docker torna operações em uma infraestrutura como serviços web mais eficientes e flexíveis.
 
-O docker é composto principalmente por dois conceitos:
-- Imagem:
-- Container:
+### Componentes:
+- Imagem: Seria o template do container é nela que difinimos o sistema operacional, quais programas serão utilizados, e quais aplicações devem ser executadas.
+- Container: Seria uma instancia da imagem sendo executada.
+
+\* Fazendo uma analogia com orientação a objeto, a Imagem seria equivalente a uma Classe, e um Container seria equivalente a uma instância dessa classe.
 
 ### VMs x Containers
 <p align="center"><img src="https://cloudlightning.eu/wp-content/uploads/2017/01/virtual-containers.jpg"/></p>
@@ -71,16 +74,34 @@ O mesmo irá listar todos os containers que foram iniciados na máquina
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
 2ca40d5e3b8f        nginx               "nginx -g 'daemon ..."   9 minutes ago       Up 8 minutes        80/tcp              xenodochial_pike
 ```
+Caso você queira saber mais detalhes sobre o container (portas utilizada, tipo de rede, etc) basta executar o comando
+```
+docker inspect [ID DO CONTAINER]
+```
+
 Caso você queira encerrar algum container basta executar o comando
 ```
-docker rm 2ca40d5e3b8f
+docker rm [ID DO CONTAINER]
 ```
-*Onde o ``2ca40d5e3b8f`` seria o ID do container (que é encontrado no comando ``docker ps``).
+*O ID do container pode ser encontrado no comando ``docker ps``.
 
 ## 4 - Acessando os containers
 Com os containers "de pé" para acessá-los basta bater no IP da máquina Ubuntu passando a porta exposta durante o processo de subir o container.
 **Ex:** Se você rodou o container na porta 8080 (``$ docker run -d -p 8080:80 nginx``) basta acessar o IP na porta 8080 ``172.6.1.66:8080``
 
-Fontes utilizadas:
+## 5 - Executando comando em containers
+Para executar comando no container basta executar o comando abaixo
+``
+docker exec -it c32a365997a1 ls -la
+``
+
+**Traduzindo:**  ``docker exec -it [ID DO CONTAINER] [COMANDO A SER EXECUTADO]``
+
+
+
+
+## *Links úteis:
 https://docs.docker.com/install/linux/docker-ce/
 https://www.mundodocker.com.br/
+https://www.digitalocean.com/community/tutorials/como-instalar-e-utilizar-o-docker-primeiros-passos-pt
+https://stackoverflow.com/questions/28089344/docker-what-is-it-and-what-is-the-purpose?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
