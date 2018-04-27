@@ -76,6 +76,10 @@ docker rm 2ca40d5e3b8f
 ```
 *Onde o ``2ca40d5e3b8f`` seria o ID do container (que é encontrado no comando ``docker ps``).
 
+## $ - Acessando os containers
+Com os containers "de pé" basta acessar os mesmas atraves do IP da maquina Ubuntu passando a porta do exposta para o container.
+Ex: Se você rodou o container na porta 8080 (``$ docker run -d -p 8080:80 nginx``) basta acessar o IP na porta 8080 ``172.6.1.66:8080``
+
 Fontes utilizadas:
 https://docs.docker.com/install/linux/docker-ce/
 https://www.mundodocker.com.br/
