@@ -1,5 +1,6 @@
 
 
+
 <p align="center"><img src="https://cdn.cloudlabs.com.br/wp-content/uploads/2017/07/whale-docker-logo.png"/></p>
 
 # Tutorial Virtualização Docker no Ubuntu
@@ -8,7 +9,7 @@ Nessa tutorial iremos apresentar o que é o Docker e como o mesmo pode ser utili
 
 ## *Mas o que é Docker ?
 
-O Docker é uma plataforma de virtualização criada com o objetivo de otimizar a criação, o teste e implantação de aplicações, só que diferente das virtualizações convencionais o Docker não utiliza o kernel inteiro do sistema operacional da máquina virtual ao invés disso utiliza o kernel da própria máquina hospedeira, gerando menos gasto de memoria e principalmente vacilitando o processo de desenvolvimento já que o Docker vai funcionar da mesma forma independente do sistema operacional.
+O Docker é uma plataforma de virtualização criada com o objetivo de otimizar a criação, o teste e implantação de aplicações, só que diferente das virtualizações convencionais o Docker não utiliza o kernel inteiro do sistema operacional da máquina virtual ao invés disso utiliza o kernel da própria máquina hospedeira, gerando menos gasto de memoria e principalmente vacilitando o processo de desenvolvimento já que o Docker proporciona uma padronização do ambiente de desenvolvimento pois o mesmo vai funcionar da mesma forma independente do sistema operacional.
 
 ### Principais Componentes:
 - Imagem: Seria o template do container é nela que difinimos o sistema operacional, quais programas serão utilizados, e quais aplicações devem ser executadas.
@@ -20,8 +21,8 @@ O Docker é uma plataforma de virtualização criada com o objetivo de otimizar 
 <p align="center"><img src="https://cloudlightning.eu/wp-content/uploads/2017/01/virtual-containers.jpg"/></p>
 
 ## 0 - Pré-requisitos
-Precisamos apenas de uma máquina Ubuntu com acesso a internet (modo bridge se estiver rodando uma VM), essa máquina Ubuntu também deve ser da arquitetura x86/x64 isso é necessário para que a virtualização do docker ocorra.
-*Para saber a arquitetura da sua máquina ubuntu basta rodar o comando ```uname -a```
+Precisamos apenas de uma máquina Ubuntu com acesso a internet (modo bridge se estiver rodando uma VM), essa máquina Ubuntu também deve ser da arquitetura x86/x64 isso é necessário para que a virtualização do Docker possa ocorrer.
+*Para saber a arquitetura da sua máquina Ubuntu basta rodar o comando ```uname -a```
 
 ## 1 - Instalando o Docker no Ubuntu
 Antes de tudo precisamos atualizar o repositório do apt-get
