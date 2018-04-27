@@ -13,7 +13,7 @@ O docker é composto principalmente por dois conceitos:
 - Container:
 
 ### VMs x Containers
-<p align="center"><img src="http://blog.ti.lemaf.ufla.br/content/images/2016/05/mp234.png"/></p>
+<p align="center"><img src="https://cloudlightning.eu/wp-content/uploads/2017/01/virtual-containers.jpg"/></p>
 
 ## 0 - Pré-requisitos
 Precisamos apenas de uma máquina Ubuntu com acesso a internet (modo bridge se estiver rodando uma VM), essa máquina Ubuntu também deve ser da arquitetura x86/x64 isso é necessário para que a virtualização do docker ocorra.
