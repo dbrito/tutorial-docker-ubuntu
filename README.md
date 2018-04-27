@@ -12,7 +12,7 @@ O docker é composto principalmente por dois conceitos:
 - Imagem:
 - Container:
 
-###VMs x Containers
+### VMs x Containers
 <p align="center"><img src="http://blog.ti.lemaf.ufla.br/content/images/2016/05/mp234.png"/></p>
 
 ## 0 - Pré-requisitos
