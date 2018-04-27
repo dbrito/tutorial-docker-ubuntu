@@ -8,7 +8,7 @@ Nessa tutorial iremos apresentar o que é o Docker e como o mesmo pode ser utili
 
 ## *Mas o que é Docker ?
 
-O Docker é uma plataforma de virtualização criada com o objetivo de otimizar a criação, o teste e implantação de aplicações, só que diferente das virtualizações convencionais o Docker não utiliza o kernel inteiro do sistema operacional da máquina virtual ao invés disso utiliza o kernel da própria máquina hospedeira, gerando assim menos gasto de memoria.
+O Docker é uma plataforma de virtualização criada com o objetivo de otimizar a criação, o teste e implantação de aplicações, só que diferente das virtualizações convencionais o Docker não utiliza o kernel inteiro do sistema operacional da máquina virtual ao invés disso utiliza o kernel da própria máquina hospedeira, gerando menos gasto de memoria e principalmente vacilitando o processo de desenvolvimento já que o Docker vai funcionar da mesma forma independente do sistema operacional.
 
 ### Principais Componentes:
 - Imagem: Seria o template do container é nela que difinimos o sistema operacional, quais programas serão utilizados, e quais aplicações devem ser executadas.
