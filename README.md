@@ -2,7 +2,7 @@
 
 <p align="center"><img src="https://cdn.cloudlabs.com.br/wp-content/uploads/2017/07/whale-docker-logo.png"/></p>
 
-# Tutorial Virtualização de Docker no Ubuntu
+# Tutorial Virtualização Docker no Ubuntu
 Nessa tutorial iremos apresentar o que é o Docker e como o mesmo pode ser utilizado para a virtualização em máquinas Ubuntu.
 
 
