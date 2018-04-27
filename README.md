@@ -9,7 +9,7 @@ Nessa tutorial iremos apresentar o que é o Docker e como o mesmo pode ser utili
 
 O Docker é uma plataforma de virtualização criada com o intuido em  alternativa de virtualização em que o kernel da máquina hospedeira é compartilhado com a máquina virtualizada ou o software em operação, portanto um desenvolvedor pode agregar a seu software a possibilidade de levar as bibliotecas e outras dependências do seu programa junto ao software com menos perda de desempenho do que a virtualização do hardware de um servidor completo. Assim, o docker torna operações em uma infraestrutura como serviços web mais eficientes e flexíveis.
 
-### Componentes:
+### Principais Componentes:
 - Imagem: Seria o template do container é nela que difinimos o sistema operacional, quais programas serão utilizados, e quais aplicações devem ser executadas.
 - Container: Seria uma instancia da imagem sendo executada.
 
